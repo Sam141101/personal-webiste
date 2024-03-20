@@ -1,0 +1,38 @@
+.navbar-container {
+    padding: 15px;
+    background-color: blue;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0 20px;
+    padding: 0 5px;
+    /* background-color: red; */
+}
+.navbar-logo {
+    width: 130px;
+    height: auto;
+}
+
+
+
+.navbar-link {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 0.6px;
+    opacity: 0.7;
+}
+
+.navbar-link.active {
+    opacity: 1;
+
+}
+
+
+.navbar-toggler {
+    margin-left: 20px;
+    padding: 20px 30px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
