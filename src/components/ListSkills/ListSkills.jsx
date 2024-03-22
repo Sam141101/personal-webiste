@@ -2,7 +2,7 @@ import React from "react";
 import "./listskills.css";
 
 function ListSkills(skills) {
-  console.log("skills", skills);
+  // console.log("skills", skills);
   return (
     <ul className="list_skills row g-4">
       {skills.skills.map((skill) => (

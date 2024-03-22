@@ -22,7 +22,7 @@ html {
 body {
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
+  background-color: rgb(18, 18, 18) !important;
   /* background-color: rgb(18 18 18/0.8) !important; */
   font-family: "Open Sans", sans-serif !important;
   font-weight: 400;
