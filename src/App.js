@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <NavBar />
       {/* <Banner /> */}
-      <div className='main'>
+      <div className='main container overflow-hidden'>
       <About />
 
       </div>

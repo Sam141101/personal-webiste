@@ -3,6 +3,7 @@ import html from "../../assets/img/html.png";
 import git from "../../assets/img/git.png";
 import ListSkills from "../ListSkills/ListSkills";
 import "./about.css";
+import IntroduceYourself from "../IntroduceYourself/IntroduceYourself";
 
 const techs = [
   {
@@ -78,6 +79,16 @@ const tools = [
   },
 ];
 
+const introduce_yourself = {
+  data: "Giới thiệu bản thân khi phỏng vấn được xem là một cách thức tạo dấu ấn khá quan trọng đối với bất kỳ một ứng viên nào. Có thể nói, việc giới thiệu bản thân khi phỏng vấn là một thách thức mà nhà tuyển dụng đặt ra cho mỗi ứng viên. Thoạt nghĩ, chúng ta tưởng chừng đây là một việc hết sức dẽ dàng. Tuy nhiên, để giới thiệu bản thân khi phỏng vấn hiệu quả lại là điều hoàn toàn không đơn giản",
+};
+
+const introduce_jpb = {
+  data: "Front end là một phần của một website ở đó người dùng có thể tương tác để sử dụng, tất cả những gì mà bạn nhìn thấy trên một website bao gồm: font chữ, màu sắc, danh mục sản phẩm, menu, thanh trượt, v.v. đều là sự kết hợp hoàn hảo giữa HTML, CSS và Javascript.",
+};
+
+const data = [introduce_yourself, introduce_jpb];
+
 function About() {
   const [activeTab, setActiveTab] = useState("techs");
 
@@ -90,10 +101,15 @@ function About() {
   };
 
   return (
-    <section className="about">
-      <div className="about_me">about me</div>
-      <div className="about_skills container overflow-hidden">
-        <div className="about_tagline text-start d-flex align-items-center">
+    <article className="about container overflow-hidden">
+      {/* introduce yourself */}
+      <section className="about_yourself ">
+        <IntroduceYourself data={data} />
+      </section>
+
+      {/* introduce skills */}
+      <section className="about_skills">
+        <div className="about_tagline text-start d-flex align-items-center fadein-bot">
           <div className="cross-bar"></div>&nbsp; Skills
         </div>
         <ul className="d-flex list-unstyled">
@@ -122,8 +138,8 @@ function About() {
             <ListSkills skills={tools} />
           )}
         </div>
-      </div>
-    </section>
+      </section>
+    </article>
   );
 }
 

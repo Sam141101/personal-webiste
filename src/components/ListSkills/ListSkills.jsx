@@ -1,5 +1,5 @@
 import React from "react";
-import "./listskills.css";
+import "./listSkills.css";
 
 function ListSkills(skills) {
   // console.log("skills", skills);

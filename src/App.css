@@ -71,6 +71,7 @@ input:focus, textarea:focus, select:focus {
 
 .main {
   margin-top: 100px;
+  /* padding: 0 50px; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -106,8 +107,16 @@ input:focus, textarea:focus, select:focus {
 
 
 
-/* Custom Gutter */
 
 
-/* Custom Gutter */
 
+/* @keyframes fadeInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+} */

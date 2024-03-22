@@ -1,5 +1,18 @@
+.about {
+    /* padding: 50px; */
+}
+
+
 .about_skills {
-    padding: 50px;
+    margin: 40px 50px;
+}
+
+.about_yourself {
+    border: 1px solid rgb(56, 56, 56);
+    /* margin: 100px 0; */
+    background-color: rgb(30, 30, 31);
+    padding: 40px 50px;
+    border-radius: 30px;
 }
 
 .about_tagline {
