@@ -1,6 +1,10 @@
 .navbar-container {
-    padding: 15px;
-    background-color: blue;
+    padding: 19px;
+    background-color: rgba(18, 18, 18, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
 }
 
 .nav-item {
